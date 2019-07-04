@@ -249,24 +249,6 @@ public class ResultActivity extends AppCompatActivity {
     }
 
     public void onClickLltResultShare(View view) {
-        // Wrap the string txt in a WXTextObject.
-//        WXTextObject textObj = new WXTextObject();
-//        textObj.text = str_data;
-//
-//        // Wrap the text object in a WXMediaMessage.
-//        WXMediaMessage msg = new WXMediaMessage();
-//        msg.mediaObject = textObj;
-//        msg.description = str_data;
-//
-//        // Create a request using the media message
-//        SendMessageToWX.Req req = new SendMessageToWX.Req();
-//        req.transaction = buildTransaction("text");
-//        req.message = msg;
-//        req.scene =  SendMessageToWX.Req.WXSceneSession; // Or one of the other values
-//
-//        // Finally, send the request to WeChat
-//        msgApi.sendReq(req);
-
         String shareText = str_data;
         Intent shareIntent = ShareCompat.IntentBuilder.from(this)
                 .setType("text/plain").setText(shareText).getIntent();

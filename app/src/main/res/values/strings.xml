@@ -247,5 +247,10 @@
     <string name="common_cancel">Cancel</string>
     <string name="act_content_01">Edit Parameter Values</string>
     <string name="act_content_02">Select TXT File</string>
+    <string name="act_add_value_title">Add Value</string>
+    <string name="alert_custom_title">Add Parameter Value</string>
+    <string name="alert_custom_detail">Please enter your value. In here, each values are divided with comma.</string>
+    <string name="alert_custom_failed">This value is wrong. Please input a correct value.</string>
+    <string name="add_para_save_wrong">The count of data is zero.</string>
 
 </resources>

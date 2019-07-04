@@ -198,5 +198,10 @@
     <string name="common_cancel">取消</string>
     <string name="act_content_01">编辑参数值</string>
     <string name="act_content_02">选择TXT文件</string>
+    <string name="act_add_value_title">增加价值</string>
+    <string name="alert_custom_title">添加参数值</string>
+    <string name="alert_custom_detail">请输入您的价值。 在这里，每个值用逗号分隔。</string>
+    <string name="alert_custom_failed">这个值是错误的。 请输入正确的值。</string>
+    <string name="add_para_save_wrong">数据计数为零。</string>
 
 </resources>

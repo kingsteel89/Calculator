@@ -123,6 +123,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initUIView() {
+        Global.gParamValues.clear();
+
         String str_class = Global.gUserInfo.classname;
         if (str_class.length() == 0) {
             Global.gFrgIndex = 4;
@@ -136,65 +138,62 @@ public class MainActivity extends AppCompatActivity {
         tog_menu.syncState();
 
         nav_menu = findViewById(R.id.nav_main);
-        nav_menu.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                draw_main.closeDrawer(GravityCompat.START);
-                int id = item.getItemId();
-                switch(id)
-                {
-                    case R.id.nav_item_one:
-                        if (Global.gFrgIndex != 0) {
-                            Global.gFrgIndex = 0;
-                            loadFragmentByIndex();
-                        }
-                        break;
-                    case R.id.nav_item_two:
-                        if (Global.gFrgIndex != 1) {
-                            Global.gFrgIndex = 1;
-                            loadFragmentByIndex();
-                        }
-                        break;
-                    case R.id.nav_item_three:
-                        if (Global.gFrgIndex != 2) {
-                            Global.gFrgIndex = 2;
-                            Global.gCreateParams.clear();
-                            loadFragmentByIndex();
-                        }
-                        break;
-                    case R.id.nav_item_four:
-                        if (Global.gFrgIndex != 3) {
-                            Global.gFrgIndex = 3;
-                            loadFragmentByIndex();
-                        }
-                        break;
-                    case R.id.nav_item_five:
-                        if (Global.gFrgIndex != 4) {
-                            Global.gFrgIndex = 4;
-                            loadFragmentByIndex();
-                        }
-                        break;
-                    case R.id.nav_item_six:
-                        WXUserInfo.WxUserInitialize();
-                        Global.showOtherActivity(MainActivity.this, LoginActivity.class, 1);
-                        return true;
-                    case R.id.nav_item_seven:
-                        if (Global.gFrgIndex != 5) {
-                            Global.gFrgIndex = 5;
-                            loadFragmentByIndex();
-                        }
-                        break;
-                    case R.id.nav_item_eight:
-                        if (Global.gFrgIndex != 6) {
-                            Global.gFrgIndex = 6;
-                            loadFragmentByIndex();
-                        }
-                        break;
-                    default:
-                        break;
-                }
-                return true;
+        nav_menu.setNavigationItemSelectedListener(item -> {
+            draw_main.closeDrawer(GravityCompat.START);
+            int id = item.getItemId();
+            switch(id)
+            {
+                case R.id.nav_item_one:
+                    if (Global.gFrgIndex != 0) {
+                        Global.gFrgIndex = 0;
+                        loadFragmentByIndex();
+                    }
+                    break;
+                case R.id.nav_item_two:
+                    if (Global.gFrgIndex != 1) {
+                        Global.gFrgIndex = 1;
+                        loadFragmentByIndex();
+                    }
+                    break;
+                case R.id.nav_item_three:
+                    if (Global.gFrgIndex != 2) {
+                        Global.gFrgIndex = 2;
+                        Global.gCreateParams.clear();
+                        loadFragmentByIndex();
+                    }
+                    break;
+                case R.id.nav_item_four:
+                    if (Global.gFrgIndex != 3) {
+                        Global.gFrgIndex = 3;
+                        loadFragmentByIndex();
+                    }
+                    break;
+                case R.id.nav_item_five:
+                    if (Global.gFrgIndex != 4) {
+                        Global.gFrgIndex = 4;
+                        loadFragmentByIndex();
+                    }
+                    break;
+                case R.id.nav_item_six:
+                    WXUserInfo.WxUserInitialize();
+                    Global.showOtherActivity(MainActivity.this, LoginActivity.class, 1);
+                    return true;
+                case R.id.nav_item_seven:
+                    if (Global.gFrgIndex != 5) {
+                        Global.gFrgIndex = 5;
+                        loadFragmentByIndex();
+                    }
+                    break;
+                case R.id.nav_item_eight:
+                    if (Global.gFrgIndex != 6) {
+                        Global.gFrgIndex = 6;
+                        loadFragmentByIndex();
+                    }
+                    break;
+                default:
+                    break;
             }
+            return true;
         });
 
         View headerView = nav_menu.getHeaderView(0);

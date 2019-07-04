@@ -58,6 +58,10 @@ public class CalcActivity extends AppCompatActivity {
     }
 
     private void initDatas() {
+        if (Global.gParamValues.size() > 0) {
+            initViewUI();
+            return;
+        }
         dialog = ProgressDialog.show(CalcActivity.this, getString(R.string.progress_title), getString(R.string.progress_detail));
 
         String str_ids = Global.gSelFuncItems.get(0).id;

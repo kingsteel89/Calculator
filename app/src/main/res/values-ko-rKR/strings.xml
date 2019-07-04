@@ -198,5 +198,10 @@
     <string name="common_cancel">취소</string>
     <string name="act_content_01">변수편집</string>
     <string name="act_content_02">TXT파일 선택</string>
+    <string name="add_para_save_wrong">자료가 0개 입니다.</string>
+    <string name="alert_custom_failed">입력값 오유. 정확한 값을 입력하시오.</string>
+    <string name="alert_custom_detail">값을 입력하시오. 여기서 매 값은 반점으로 구분된다.</string>
+    <string name="alert_custom_title">변수값추가</string>
+    <string name="act_add_value_title">값 추가</string>
 
 </resources>

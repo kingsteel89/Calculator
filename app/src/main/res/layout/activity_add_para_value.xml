@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
-    tools:context=".CalcActivity"
+    tools:context=".AddParaValueActivity"
     android:orientation="vertical">
 
     <LinearLayout
@@ -28,15 +28,14 @@
         </LinearLayout>
 
         <TextView
-            android:id="@+id/lbl_calc_title"
             style="@style/txt_b_r_20"
             android:gravity="center"
-            />
+            android:text="@string/act_add_value_title"/>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:onClick="onClickLltAdd">
+            android:onClick="onClickLltAddValue">
             <ImageView
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="15dp"
@@ -49,29 +48,28 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_margin="20sp"
+        android:layout_margin="10sp"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="@drawable/item_back_shadow_15" >
+        android:layout_weight="1" >
         <ListView
-            android:id="@+id/lst_calc_para"
+            android:id="@+id/lst_add_para"
             android:layout_margin="10dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_marginBottom="20sp"
+        android:layout_marginBottom="10sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center">
         <Button
             android:layout_width="150dp"
             android:layout_height="50dp"
-            android:text="@string/calc_calculate"
+            android:text="@string/common_save"
             style="@style/btn_title"
-            android:onClick="onClickCalcBtn"/>
+            android:onClick="onClickSaveBtn"/>
     </LinearLayout>
     
 </LinearLayout>
