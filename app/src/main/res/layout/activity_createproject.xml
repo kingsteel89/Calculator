@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".CreateProjectActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/top_back_shadow">
+
+        <LinearLayout
+            android:id="@+id/llt_main_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="onClickBackIcon">
+            <ImageView
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="10dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ico_back"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+        <TextView
+            style="@style/txt_b_r_20"
+            android:gravity="center"
+            android:text="@string/save_project_title" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+            <ImageView
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="10dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            style="@style/txt_process.done"
+            android:text="1"/>
+        <LinearLayout
+            style="@style/llt_spec_line"/>
+        <TextView
+            style="@style/txt_process.done"
+            android:text="2"/>
+        <LinearLayout
+            style="@style/llt_spec_line"/>
+        <TextView
+            style="@style/txt_process.doing"
+            android:text="3"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            style="@style/txt_b_r_12_n"
+            android:text="@string/save_project_detail"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/txt_create_project"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/project_hint_name"
+        android:textColor="@color/txt_black"
+        android:textColorHint="@color/txt_hint"/>
+
+    <ListView
+        android:id="@+id/lst_create_project"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:background="@drawable/item_back_shadow_15"
+        android:onClick="onClickLltCreateProject">
+        <TextView
+            style="@style/txt_b_r_16_n"
+            android:text="@string/create_project_pay"/>
+    </LinearLayout>
+
+    
+</LinearLayout>

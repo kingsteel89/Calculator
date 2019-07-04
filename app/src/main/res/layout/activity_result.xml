@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ResultActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/top_back_shadow">
+
+        <LinearLayout
+            android:id="@+id/llt_main_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="onClickBackIcon">
+            <ImageView
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="10dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ico_back"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+        <TextView
+            style="@style/txt_b_r_20"
+            android:gravity="center"
+            android:text="@string/result_title" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="onClickLltResultShare">
+            <ImageView
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="10dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ico_share"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/lbl_result_title"
+            style="@style/txt_b_r_20"
+            android:text="Formula Name"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/item_back_shadow_15">
+
+        <ListView
+            android:id="@+id/lst_result"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="@string/formula_save"
+            style="@style/btn_title"
+            android:onClick="onClickSaveBtn"/>
+
+        <Button
+            android:layout_marginLeft="30dp"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="@string/result_back"
+            style="@style/btn_title"
+            android:onClick="onClickBackBtn"/>
+    </LinearLayout>
+    
+</LinearLayout>

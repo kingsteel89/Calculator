@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ParaSettingActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/top_back_shadow">
+
+        <LinearLayout
+            android:id="@+id/llt_main_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="onClickBackIcon">
+            <ImageView
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="10dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ico_back"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/lbl_setpara_title"
+            style="@style/txt_b_r_20"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:id="@+id/llt_setpara_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+            <ImageView
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ico_close"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/txt_b_r_16"
+            android:gravity="center"
+            android:text="@string/item_create_name"/>
+        <EditText
+            android:id="@+id/txt_setpara_name"
+            style="@style/txt_b_r_16"
+            android:hint="@string/setpara_hint_name"
+            android:textColorHint="@color/txt_hint"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/txt_b_r_16"
+            android:gravity="center"
+            android:text="@string/item_create_description"/>
+        <EditText
+            android:id="@+id/txt_setpara_desc"
+            style="@style/txt_b_r_16"
+            android:hint="@string/setpara_hint_desc"
+            android:textColorHint="@color/txt_hint"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_marginBottom="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btn_setpara_set"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            style="@style/btn_title"/>
+    </LinearLayout>
+
+    
+</LinearLayout>

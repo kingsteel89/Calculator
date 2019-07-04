@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">수학 유물</string>
+
+    <string name="login_title">로그인</string>
+    <string name="login_wechat">웨신로그인</string>
+    <string name="login_contact_us"><u>지원팀 콘택</u></string>
+
+    <string name="item_function_name">함수이름</string>
+    <string name="nav_name">김영철</string>
+    <string name="nav_location">심양, 중국</string>
+    <string name="nav_open">열기</string>
+    <string name="nav_close">닫기</string>
+    <string name="menu_function_list">함수 목록</string>
+    <string name="menu_common">일반 계산기</string>
+    <string name="menu_create_function">함수 만들기</string>
+    <string name="menu_profile">프로파일</string>
+    <string name="menu_logout">로그아웃</string>
+    <string name="menu_history">기록</string>
+    <string name="list_empty_function">함수가 존재하지 않습니다.</string>
+    <string name="profile_wechat_payment">웨신지불</string>
+    <string name="profile_comment">댓글</string>
+    <string name="profile_support">지원팀</string>
+    <string name="wechat_recharge">충전</string>
+    <string name="wechat_detail">여기서, F는 함수개수 입니다.</string>
+    <string name="calc_calculate">계산</string>
+    <string name="calc_alert_input_title">자료입력</string>
+    <string name="calc_alert_input_detail">변수값을 입력하시오.</string>
+    <string name="calc_alert_delete_title">자료 삭제</string>
+    <string name="calc_alert_delete_detail">정말 자료를 지우겠습니까?</string>
+    <string name="create_algorithm">흐름도</string>
+    <string name="create_alert_add">함수에 변수가 포함되여 있지 않습니다. 변수를 입력하시오.</string>
+    <string name="item_create_description">설명</string>
+    <string name="item_create_name">이름</string>
+    <string name="setpara_add">변수 추가</string>
+    <string name="setpara_edit">변수 편집</string>
+    <string name="setpara_hint_name">5문자 이하</string>
+    <string name="setpara_hint_desc">10문자 이하</string>
+    <string name="setpara_code_add">추가</string>
+    <string name="setpara_code_edit">편집</string>
+    <string name="setpara_alert_delete">변수 삭제</string>
+    <string name="setpara_alert_deletedetail">정말 변수를 삭제하겠습니까?</string>
+    <string name="setpara_alert_waring">경고</string>
+    <string name="setpara_alert_wrong">이름 형식 오유. 변경하시오.</string>
+    <string name="formula_title">공식 작성</string>
+    <string name="formula_calculate">계산 공식</string>
+    <string name="formula_save">보관</string>
+    <string name="formula_alert_detail">함수이름을 입력하시오.</string>
+    <string name="value_title">자료 설정</string>
+    <string name="value_alert_title">자료 설정</string>
+    <string name="value_alert_detail">자료를 입력하시오.</string>
+    <string name="result_title">결과</string>
+    <string name="result_back">되돌이</string>
+    <string name="result_alert_title">결과 보관</string>
+    <string name="result_alert_detail">파일이름을 입력하시오.</string>
+    <string name="result_para_title">변수</string>
+    <string name="result_date">작성날자:</string>
+    <string name="result_maker">작성자:</string>
+    <string name="profile_classname">클래스 이름</string>
+    <string name="profile_last_update">최신 갱신</string>
+    <string name="profile_alert_detail">함수이름을 입력하시오.</string>
+    <string name="alert_waring">경고</string>
+    <string name="list_alert_class_detail">클래스이름을 입력하여야 합니다.</string>
+    <string name="profile_function_report">함수제출</string>
+    <string name="nav_lbl_pay">지불</string>
+    <string name="nav_lbl_func">함수개수</string>
+    <string name="nav_lbl_rfunc">남은수</string>
+    <string name="formula_description">공식설명</string>
+
+    <string name="alert_waring_title">경고</string>
+    <string name="alert_para_able_detail">이름은 오직 \'a~z\' and \'_\', \'0~9\' 만 가능합니다.</string>
+    <string name="alert_server_error_detail">서버오유. 몇분후에 다시 시도하십시오.</string>
+    <string name="alert_error_internet_detail">당신의 인터넷을 체크하십시오.</string>
+    <string name="guide_title">사용설명서</string>
+    <string name="guide_name_rule">모든 함수, 변수와 클래스들의 이름은 모드 \'a~z\', \'_\' 와 \'0~9\'로 표기하여야 합니다.</string>
+    <string name="guide_name">1. 이름정의</string>
+    <string name="guide_function">2. 함수 창조</string>
+    <string name="guide_funtion_rule_01">모든 함수는 적어도 한개 이상의 변수를 가져야 한다.</string>
+    <string name="guide_function_rule_02">모든 함수는 한개의 알고리듬을 가져야 한다.</string>
+    <string name="guide_alogrithm">3. 알고리듬 편집</string>
+    <string name="guide_algorithm_rule_01">함수 설명 입력칸은 알고리듬 화면의 맨우에 있습니다.</string>
+    <string name="guide_algorithm_rule_02">함수의 기본변수는 키보드의 맨 우에 있습니다.</string>
+    <string name="guide_algorithm_rule_03">p1 ~ p7보조변수 입니다.</string>
+    <string name="guide_algorithm_rule_04">키보드는 모드 28개의 키입니다.</string>
+    <string name="guide_algorithm_rule_05"><![CDATA[키워드는 수자키(0 ~ 9), 연산키(/, *, +, -), 론리연산키(<, >, if), 묶음키((, ), {, }) 와 기타키(AC, Enter(En), Back(<), Space(_), Result (Re), Equal (=), Point (.))로 이루어졌습니다.]]></string>
+    <string name="guide_algorithm_rule_06">모든 키들을 입력한 후에는 반드시 공백키(_)를 입력하여야 합니다.</string>
+    <string name="guide_algorithm_rule_07">\'Re\'키를 입력한 문장이 끝나면, 사용자는 더 이상 편집할수 없습니다.</string>
+    <string name="guide_algorithm_rule_08">코드문장 마지막에는 사용자는 반드시 \'En\'(Enter)키를 입력하여야 합니다.</string>
+    <string name="guide_algorithm_rule_09">모든 변수를 입력할때, 코드에는 자동적으로 변수들의 앞에 \'$\'기호가 입력된다.</string>
+    <string name="guide_algorithm_rule_10">(\'En\')키를 입력하면, 코드에는 자동적으로 마지막에 \' ;\'기호가 입력된다.</string>
+    <string name="guide_algorithm_rule_11">아래에 코드편집에 대한 샘풀을 보여줍니다.</string>
+    <string name="guide_algorithm_rule_12">아래의 알고리듬은 삼각형의 3변을 알때 면적을 구하는 공식이다.</string>
+    <string name="guide_algorithm_rule_13"><![CDATA[$p1 = ( $a + $b + $c ) / 2 ;
+        \n$p2 = $p1 - $a ;
+        \n$p3 = $p1 - $b ;
+        \n$p4 = $p1 - $c ;
+        \nif ( $p1 < 0 ) {
+        \n$p1 = 0 ;
+        \n}
+        \nif ( $p2 < 0 ) {
+        \n$p2 = 0 ;
+        \n}
+        \nif ( $p3 < 0 ) {
+        \n$p3 = 0 ;
+        \n}
+        \n$Re = $p1 * $p2 * $p3 * $p4 ;
+        \n 여기서, a, b와 c는 삼각형의 3변의 길이이다.
+    ]]></string>
+    <string name="guide_algorithm_rule_14"><u>만일 사용설명서에 대한 비데오를 보려면, 여기를 클릭하시오.</u></string>
+    <string name="guide_algorithm_rule_15"><u>만일 물음문이 있으면, 여기를 클릭하시오.</u></string>
+    <string name="guide_calculate">4. 알고리듬 계산</string>
+    <string name="guide_calculate_rule_01">알고리듬을 계산할때, 값의 입력은 문서를 이용한다. (*.txt).</string>
+    <string name="guide_calculate_rule_02">실례1 (변수의 개수는 2 이다.):
+        \n1.5,10.5
+        \n2.5,9.5
+        \n3.5,8.5
+        \n4.5,7.5
+        \n5.5,6.5
+    </string>
+    <string name="guide_calculate_rule_03">실례2 (변수의 개수는 3 이다.)
+        \n1.5,10.5,6.5
+        \n2.5,9.5,7.5
+        \n3.5,8.5,8.5
+        \n4.5,7.5,9.5
+        \n5.5,6.5,10.5
+    </string>
+
+    <string name="comment_submit">제출</string>
+    <string name="comment_content">내용</string>
+    <string name="comment_detail_hint">여기에 댓글을 편집하시오.</string>
+    <string name="alert_empty_detail">단어를 편집하여야 합니다.</string>
+    <string name="payment_btn_01">0.99 웬 / 1개 함수</string>
+    <string name="payment_btn_02">24.95 웬 / 30개 함수</string>
+    <string name="payment_btn_03">59.9 웬 / 80개 함수</string>
+    <string name="payment_btn_04">89.5 웬 / 150개 함수</string>
+
+    <string name="progress_title">로딩중</string>
+    <string name="progress_detail">잠시만 기다려주십시오...</string>
+
+    <string name="history_adpater_payed">감사합니다. 당신은 방금 %s웬 지불하였습니다.</string>
+    <string name="pay_unit">웬</string>
+    <string name="help_title">편집 방조</string>
+    <string name="help_action">방조 (20 웬)</string>
+    <string name="call_support_team">지원팀 호출</string>
+
+    <string name="main_empty_select">당신은 1개이상의 함수를 선택하여야 합니다.</string>
+    <string name="calc_title">계산설정</string>
+    <string name="result_title_activity">계산결과</string>
+    <string name="menu_project_list">프로젝트 목록</string>
+    <string name="list_empty_project">프로젝트가 존재하지 않습니다.</string>
+    <string name="project_hint_name">프로제트 이름</string>
+    <string name="create_project_title">프로젝트 생성</string>
+    <string name="create_project_pay">만들기 (1 웬)</string>
+    <string name="create_toast_name">당신은 반드시 프로젝트 이름을 입력하여야 합니다.</string>
+    <string name="project_detail_title">프로젝트 세부보기</string>
+    <string name="project_detail_parameters">변수들</string>
+    <string name="project_detail_function">함수들</string>
+    <string name="common_test">테스트</string>
+    <string name="guide_step1_title">1. 함수 창조 준비.</string>
+    <string name="guide_step2_title">2. 함수변수 설정.</string>
+    <string name="guide_step3_title">3. 함수 알고리듬 편집.</string>
+    <string name="guide_step4_title">4. 창조된 함수 테스트.</string>
+    <string name="guide_step5_title">5. 함수 보관.</string>
+    <string name="guide_step1_desc1">첫번째 단계는 함수 창조준비 단계이다.</string>
+    <string name="guide_step1_desc2">모든 사용자들은 여기에서 함수 창조단계의 모든것을 알수 있습니다.</string>
+    <string name="guide_step1_desc3">당신은 모든 단계를 완성하면 \'다음\' 단추를 누를수 있으면 다음 단계에로 갈수 있습니다.</string>
+    <string name="set_para_detail">함수를 만들기위한 매개 변수를 설정해야 합니다. 추가시 \'+\' 버튼을 클릭 할 수 있습니다. 편집하는 경우 목록 항목을 클릭 할 수 있습니다. 다음 단계로 이동하려면 \'다음\' 버튼을 클릭하십시오.</string>
+    <string name="edit_algo_detail">함수를 만들기 위한 알고리즘을 편집해야 합니다. 알고리즘 편집이 끝나면 \'다음\' 버튼을 클릭하십시오.</string>
+    <string name="test_algorithm_title">알고리듬 검사</string>
+    <string name="common_next">다음</string>
+    <string name="alert_test_detail">당신은 \'테스트\' 합니다.</string>
+    <string name="setting_parameters_title">변수 설정</string>
+    <string name="test_algorithm">알고리듬</string>
+    <string name="common_result">결과</string>
+    <string name="test_error_linenumber">오유 행 번호: %d</string>
+    <string name="common_save">보관</string>
+    <string name="save_algorithm_title">알고리듬 보관</string>
+    <string name="save_function_name">함수 이름</string>
+    <string name="save_function_description">함수 설명</string>
+    <string name="save_algorithm_detail">알고리듬 설명</string>
+    <string name="common_success">성공</string>
+    <string name="guide_step1_ptitle">1. 프로젝트 창조 준비.</string>
+    <string name="guide_step2_ptitle">2. 프로젝트의 함수 선정.</string>
+    <string name="guide_step3_ptitle">3. 창조된 프로젝트 보관.</string>
+    <string name="guide_step1_pdesc1">첫 단계는 준비단계입니다.</string>
+    <string name="guide_step1_pdesc2">모든 사용자들은 여기서 프로젝트의 창조의 단계를 알수 있습니다.</string>
+    <string name="guide_step1_pdesc3">매 단계를 완성하면 사용자는 \'다음\'버턴을 눌러 다음 단계로 갈수 있습니다.</string>
+    <string name="function_detail_title">함수 상세</string>
+    <string name="common_parameters">변수</string>
+    <string name="function_detail_algorithm">알고리듬</string>
+    <string name="common_edit">편집</string>
+    <string name="select_functions_title">함수선정</string>
+    <string name="sel_function_description">프로젝트를 생성하기 위한 몇 가지 함수들을 선택할수 있습니다. 여기서는 변수의 개수가 같도록 함수를 선택해야 합니다.</string>
+    <string name="func_item_param">%d 변수</string>
+    <string name="save_project_detail">여기서는 당신이 원하는 프로젝트의 이름에 따라 함수를 만들수 있습니다. 그러나 당신은 반드시 돈을 지불하여야 합니다.</string>
+    <string name="save_project_title">프로젝트 보관</string>
+
+</resources>

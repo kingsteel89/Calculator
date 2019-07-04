@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".HelpActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/top_back_shadow">
+
+        <LinearLayout
+            android:id="@+id/llt_main_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="onClickBackIcon">
+            <ImageView
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="10dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ico_back"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+        <TextView
+            style="@style/txt_b_r_20"
+            android:gravity="center"
+            android:text="@string/help_title" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="onClickLltAddFormula">
+            <ImageView
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="10dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ico_add"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/item_back_shadow_15">
+            <EditText
+                android:id="@+id/txt_help_name"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                style="@style/txt_b_r_15"
+                android:hint="@string/item_function_name"
+                android:textColorHint="@color/txt_hint"/>
+            <EditText
+                android:id="@+id/txt_help_description"
+                android:layout_margin="10dp"
+                style="@style/txt_b_r_15"
+                android:hint="@string/item_create_description"
+                android:textColorHint="@color/txt_hint"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/item_back_shadow_15">
+            <ScrollView
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/lbl_help_main"
+                    android:gravity="top|left"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/txt_black"
+                    android:textSize="16dp"/>
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="@drawable/btn_back_shadow"
+            android:onClick="onClickLltHelp">
+            <TextView
+                style="@style/txt_b_r_16_n"
+                android:text="@string/help_action"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    
+</LinearLayout>

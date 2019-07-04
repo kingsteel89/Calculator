@@ -1,0 +1,247 @@
+<resources>
+    <string name="app_name">Math Artifact</string>
+
+    <string name="splash_bottom" translatable="false">COM.SHINDEV.TECH SINCE 2019</string>
+
+    <string name="login_title">LOGIN</string>
+    <string name="login_wechat">Wechat Login</string>
+    <string name="login_contact_us"><u>Contact Us</u></string>
+
+    <string name="item_function_name">Function Name</string>
+    <string name="item_create_description">Description</string>
+    <string name="item_create_name">Name</string>
+
+    <string name="nav_name">Yong Chol</string>
+    <string name="nav_location">San Francisco, CA</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <string name="nav_lbl_pay">Payed</string>
+    <string name="nav_lbl_func">Func</string>
+    <string name="nav_lbl_rfunc">Re-Func</string>
+
+    <string name="menu_function_list">List of Functions</string>
+    <string name="menu_common">Common Calculator</string>
+    <string name="menu_create_function">Create Function</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_logout">Logout</string>
+    <string name="menu_history">History</string>
+
+    <string name="list_empty_function">Empty Functions.</string>
+    <string name="list_empty_project">Empty Projects.</string>
+
+    <string name="profile_wechat_payment">Wechat Payment</string>
+    <string name="profile_comment">Comment</string>
+    <string name="profile_support">Support</string>
+    <string name="profile_phonenumber" translatable="false">15961075156</string>
+    <string name="profile_phone_number" translatable="false">tel:+8615961075156</string>
+
+    <string name="wechat_recharge">Recharge</string>
+    <string name="wechat_detail">In here, F is Functions.</string>
+
+    <string name="clear" translatable="false">AC</string>
+    <string name="percent" translatable="false">%</string>
+    <string name="change_sign" translatable="false">+/-</string>
+    <string name="square_root" translatable="false">√</string>
+    <string name="squared" translatable="false">X²</string>
+    <string name="cubed" translatable="false">X³</string>
+    <string name="ln" translatable="false">ln</string>
+    <string name="log10" translatable="false">log10</string>
+    <string name="e" translatable="false">e</string>
+    <string name="pi" translatable="false">π</string>
+    <string name="cos" translatable="false">cos(x)</string>
+    <string name="sin" translatable="false">sin(x)</string>
+    <string name="tan" translatable="false">tan(x)</string>
+    <string name="add" translatable="false">+</string>
+    <string name="subtract" translatable="false">–</string>
+    <string name="multiply" translatable="false">×</string>
+    <string name="divide" translatable="false">÷</string>
+
+    <string name="calc_function" translatable="false">A(长) * B(宽)</string>
+    <string name="calc_calculate">Calculate</string>
+    <string name="calc_alert_input_title">Input Value</string>
+    <string name="calc_alert_input_detail">Please enter value of parameters.</string>
+    <string name="calc_alert_delete_title">Delete Value</string>
+    <string name="calc_alert_delete_detail">Are you sure you want to delete this values?</string>
+
+    <string name="create_algorithm">Algorithm</string>
+    <string name="create_alert_add">This function has no any parameters. Please add more one.</string>
+
+    <string name="setpara_add">Add Parameter</string>
+    <string name="setpara_edit">Edit Parameter</string>
+    <string name="setpara_hint_name">Less 5 Char</string>
+    <string name="setpara_hint_desc">Less 10 Char</string>
+    <string name="setpara_code_add">Add</string>
+    <string name="setpara_code_edit">Edit</string>
+    <string name="setpara_alert_delete">Delete Parameter</string>
+    <string name="setpara_alert_deletedetail">Are you sure you want to delete this parameter?</string>
+    <string name="setpara_alert_waring">Waring</string>
+    <string name="setpara_alert_wrong">This name is wrong. Please change it.</string>
+
+    <string name="formula_title">Editing Algorithm</string>
+    <string name="formula_calculate">Calculate Formula</string>
+    <string name="formula_less" translatable="false"><![CDATA[<]]></string>
+    <string name="formula_save">Save</string>
+    <string name="formula_alert_detail">Please enter your function name.</string>
+    <string name="formula_ok" translatable="false">Ok</string>
+    <string name="formula_cancel" translatable="false">Cancel</string>
+    <string name="formula_description">Formula Description</string>
+
+    <string name="value_title">Setting Value</string>
+    <string name="value_alert_title">Set Value</string>
+    <string name="value_alert_detail">Please enter your value.</string>
+
+    <string name="result_title">Result</string>
+    <string name="result_back">Back</string>
+    <string name="result_alert_title">Save Result</string>
+    <string name="result_alert_detail">Please enter your file name.</string>
+    <string name="result_para_title">Parameters</string>
+    <string name="result_date">Date:</string>
+    <string name="result_maker">Maker:</string>
+
+    <string name="profile_classname">Class Name</string>
+    <string name="profile_last_update">Last Update</string>
+    <string name="profile_alert_detail">Please input Class name.</string>
+    <string name="profile_function_report">Function Report</string>
+
+    <string name="alert_waring">Waring</string>
+    <string name="list_alert_class_detail">You should input your class name.</string>
+    <string name="alert_waring_title">Warning</string>
+    <string name="alert_para_able_detail">The name is only available \'a~z\' and \'_\', \'0~9\'.</string>
+    <string name="alert_server_error_detail">Error server, Please try it after a few minutes.</string>
+    <string name="alert_error_internet_detail">Please check your internet.</string>
+
+    <string name="guide_title">Guide Line</string>
+    <string name="guide_name_rule">The name of class, function and parameters is only made of \'a~z\' and \'0~9\', \'_\'.</string>
+    <string name="guide_name">1. Define name</string>
+    <string name="guide_function">2. Create Function</string>
+    <string name="guide_funtion_rule_01">All functions must have at least one parameter.</string>
+    <string name="guide_function_rule_02">All functions must have only one algorithm.</string>
+    <string name="guide_alogrithm">3. Edit Algorithm</string>
+    <string name="guide_algorithm_rule_01">The editview for inputing function description is the top of the editing screen.</string>
+    <string name="guide_algorithm_rule_02">The main parameters of function description is the top of the keyboard.</string>
+    <string name="guide_algorithm_rule_03">The p1 ~ p7 are auxiliary parameters.</string>
+    <string name="guide_algorithm_rule_04">The keywords are all 28 keywords.</string>
+    <string name="guide_algorithm_rule_05"><![CDATA[The keywords are made of the number key (0 ~ 9), operate key (/, *, +, -), logical key (<, >, if), bundle key ((, ), {, }) and other key (AC, Enter(En), Back(<), Space(_), Result (Re), Equal (=), Point (.)).]]></string>
+    <string name="guide_algorithm_rule_06">After inputing all key, users must input the space key (_).</string>
+    <string name="guide_algorithm_rule_07">After inputing the sentence of including \'Re\', users can\'t edit more.</string>
+    <string name="guide_algorithm_rule_08">In the end of the code sentence, users must input \'En\'(Enter) key.</string>
+    <string name="guide_algorithm_rule_09">When inputing all parameters, the code auto adds the \'$\'sign in front of them.</string>
+    <string name="guide_algorithm_rule_10">When inputing enter key(\'En\'), the code auto adds the \' ;\'sign in end of it.</string>
+    <string name="guide_algorithm_rule_11">In following, the sample is shown for editing code.</string>
+    <string name="guide_algorithm_rule_12">When know three edges, the algorithm for getting the area of triangle.</string>
+    <string name="guide_algorithm_rule_13"><![CDATA[$p1 = ( $a + $b + $c ) / 2 ;
+        \n$p2 = $p1 - $a ;
+        \n$p3 = $p1 - $b ;
+        \n$p4 = $p1 - $c ;
+        \nif ( $p1 < 0 ) {
+        \n$p1 = 0 ;
+        \n}
+        \nif ( $p2 < 0 ) {
+        \n$p2 = 0 ;
+        \n}
+        \nif ( $p3 < 0 ) {
+        \n$p3 = 0 ;
+        \n}
+        \n$Re = $p1 * $p2 * $p3 * $p4 ;
+        \n In here, a, b and c are lengths of three edges of triangle.
+    ]]></string>
+    <string name="guide_algorithm_rule_14"><u>If you see video of the guide line, please click here.</u></string>
+    <string name="guide_algorithm_rule_15"><u>If you have any questions, please click here.</u></string>
+    <string name="guide_calculate">4. Calculate Algorithm</string>
+    <string name="guide_calculate_rule_01">When calculating the algorithm, to input of value is using value document (*.txt).</string>
+    <string name="guide_calculate_rule_02">Example 1 (The count of parameters is 2.):
+        \n1.5,10.5
+        \n2.5,9.5
+        \n3.5,8.5
+        \n4.5,7.5
+        \n5.5,6.5
+    </string>
+    <string name="guide_calculate_rule_03">Example 2 (The count of parameters is 3.)
+        \n1.5,10.5,6.5
+        \n2.5,9.5,7.5
+        \n3.5,8.5,8.5
+        \n4.5,7.5,9.5
+        \n5.5,6.5,10.5
+    </string>
+
+    <string name="comment_submit">Submit</string>
+    <string name="comment_content">Content</string>
+    <string name="comment_detail_hint">Please edit your comment in here.</string>
+    <string name="alert_empty_detail">Please input some words.</string>
+
+    <string name="payment_btn_01">0.99 CNY / 1 Function</string>
+    <string name="payment_btn_02">24.95 CNY / 30 Functions</string>
+    <string name="payment_btn_03">59.9 CNY / 80 Functions</string>
+    <string name="payment_btn_04">89.5 CNY / 150 Functions</string>
+
+    <string name="progress_title">Loading</string>
+    <string name="progress_detail">Getting some datas from server...</string>
+
+    <string name="payed_btn_01" translatable="false">99</string>
+    <string name="payed_btn_02" translatable="false">2495</string>
+    <string name="payed_btn_03" translatable="false">5990</string>
+    <string name="payed_btn_04" translatable="false">8950</string>
+    <string name="payed_btn_05" translatable="false">2000</string>
+
+    <string name="history_adpater_payed">Thanks. You just payed %sCNY.</string>
+    <string name="pay_unit">CNY</string>
+    <string name="help_title">Help Editing</string>
+    <string name="help_action">Help (20 CNY)</string>
+    <string name="call_support_team">Call Support Team</string>
+
+    <string name="main_empty_select">You should select more one function.</string>
+    <string name="calc_title">Setting of Calculate</string>
+    <string name="result_title_activity">Result of Calculate</string>
+
+    <string name="menu_project_list">List of Projects</string>
+    <string name="project_hint_name">Project Name</string>
+    <string name="create_project_title">Create Project</string>
+    <string name="create_project_pay">Create (1 CNY)</string>
+    <string name="create_toast_name">You should input a project name.</string>
+    <string name="project_detail_title">Project Detail</string>
+    <string name="project_detail_parameters">Parameters</string>
+    <string name="project_detail_function">Functions</string>
+
+    <string name="guide_step1_title">1 . Preparing creating function .</string>
+    <string name="guide_step2_title">2 . Setting Parameters of function .</string>
+    <string name="guide_step3_title">3 . Editing algorithm of function .</string>
+    <string name="guide_step4_title">4 . Testing a created function .</string>
+    <string name="guide_step5_title">5 . Saving a creating function .</string>
+    <string name="guide_step1_desc1">The first step is a preparing step.</string>
+    <string name="guide_step1_desc2">All user can know every steps for creating function in here.</string>
+    <string name="guide_step1_desc3">If you complete each step, you can press the \'Next\' button and goto the next step.</string>
+
+    <string name="guide_step1_ptitle">1 . Preparing creating project .</string>
+    <string name="guide_step2_ptitle">2 . Select functions of project .</string>
+    <string name="guide_step3_ptitle">3 . Save a created project .</string>
+    <string name="guide_step1_pdesc1">The first step is a preparing step.</string>
+    <string name="guide_step1_pdesc2">All user can know every steps for creating project in here.</string>
+    <string name="guide_step1_pdesc3">If you complete each step, you can press the \'Next\' button and goto the next step.</string>
+
+    <string name="set_para_detail">You should set some parameter for creating function. If add, you can click \'+\' button. If edit, you can click a item of list. If goto the next step, please click \'Next\' button.</string>
+    <string name="edit_algo_detail">You should edit some algorithm for creating function. If finish editing algorithm, please click \'Next\' button. </string>
+    <string name="test_algorithm_title">Test Algorithm</string>
+    <string name="common_next">Next</string>
+    <string name="alert_test_detail">You should pass the \'Test\' processing.</string>
+    <string name="common_test">Test</string>
+    <string name="setting_parameters_title">Setting Parameters</string>
+    <string name="test_algorithm">Algorithm</string>
+    <string name="common_result">Result</string>
+    <string name="test_error_linenumber">Error Line number: %d</string>
+    <string name="common_save">Save</string>
+    <string name="save_algorithm_title">Save Algorithm</string>
+    <string name="save_function_name">Function Name</string>
+    <string name="save_function_description">Function Description</string>
+    <string name="save_algorithm_detail">Algorithm Detail</string>
+    <string name="common_success">Success</string>
+    <string name="function_detail_title">Function Detail</string>
+    <string name="common_parameters">Parameters</string>
+    <string name="function_detail_algorithm">Algorithm</string>
+    <string name="common_edit">Edit</string>
+    <string name="select_functions_title">Select Functions</string>
+    <string name="sel_function_description">You can select some fucntions for creating project. In here, you should select some functions to have same parameters.</string>
+    <string name="func_item_param">%d Parameters</string>
+    <string name="save_project_detail">In here, you can create a new project by your project name. But you need to pay some moeny for it.</string>
+    <string name="save_project_title">Save Project</string>
+
+</resources>

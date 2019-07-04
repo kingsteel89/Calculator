@@ -1,0 +1,214 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/txt_black</item>
+    </style>
+
+    <style name="txt_title_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="txt_b_b_28" parent="txt_title_style">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@color/txt_black</item>
+    </style>
+
+    <style name="txt_w_b_22" parent="txt_title_style">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/txt_white</item>
+    </style>
+
+    <style name="txt_b_b_20_n" parent="txt_title_style">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/txt_black</item>
+    </style>
+
+    <style name="txt_b_b_22">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/txt_black</item>
+    </style>
+
+    <style name="txt_b_r_20">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/txt_black</item>
+    </style>
+
+    <style name="txt_b_r_16">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/txt_black</item>
+    </style>
+
+    <style name="txt_b_r_12" parent="txt_title_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/txt_black</item>
+    </style>
+
+    <style name="txt_b_r_15">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/txt_black</item>
+    </style>
+
+    <style name="txt_b_b_18">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/txt_black</item>
+    </style>
+
+    <style name="txt_w_r_12" parent="txt_title_style">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/txt_white</item>
+    </style>
+
+    <style name="txt_b_r_12_n" parent="txt_title_style">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/txt_black</item>
+    </style>
+
+    <style name="txt_w_r_20" parent="txt_title_style">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/txt_white</item>
+    </style>
+
+    <style name="txt_b_r_20_n" parent="txt_title_style">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/txt_black</item>
+    </style>
+
+    <style name="txt_b_r_16_n" parent="txt_title_style">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/txt_black</item>
+    </style>
+
+    <style name="txt_w_b_13" parent="txt_title_style">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/txt_white</item>
+    </style>
+
+    <style name="txt_b_b_13_n" parent="txt_title_style">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/txt_black</item>
+    </style>
+
+    <style name="txt_process">
+        <item name="android:layout_width">25dp</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="txt_process.will">
+        <item name="android:background">@drawable/back_process_will</item>
+        <item name="android:textColor">@color/txt_white</item>
+    </style>
+
+    <style name="txt_process.doing">
+        <item name="android:background">@drawable/back_process_doing</item>
+        <item name="android:textColor">@color/txt_black</item>
+    </style>
+
+    <style name="txt_process.done">
+        <item name="android:background">@drawable/back_process_done</item>
+        <item name="android:textColor">@color/txt_white</item>
+    </style>
+
+    <style name="btn_title">
+        <item name="android:textColor">@color/txt_black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">@drawable/btn_back_shadow</item>
+    </style>
+
+    <style name="txt_calc_key">
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+
+    <style name="txt_edit_formula">
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:layout_width">35dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:background">@drawable/text_bg4</item>
+        <item name="android:textColor">@color/txt_white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:onClick">onClick</item>
+    </style>
+
+
+    <style name="llt_calc_parent">
+        <item name="android:padding">10dp</item>
+        <item name="android:background">@color/background</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="llt_spec_line">
+        <item name="android:layout_width">0sp</item>
+        <item name="android:layout_height">1sp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginLeft">5sp</item>
+        <item name="android:layout_marginRight">5sp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@color/txt_black</item>
+    </style>
+
+    /**
+    微信登录
+    */
+    <style name="wx_login_style" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--<item name="android:background">@color/color_transparent_9000</item>-->
+    </style>
+
+    <style name="NavPage">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">#FFE1E8EB</item>
+    </style>
+</resources>

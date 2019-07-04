@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">算料神器</string>
+
+    <string name="login_title">登录</string>
+    <string name="login_wechat">微信登录</string>
+    <string name="login_contact_us"><u>联系我们</u></string>
+
+    <string name="item_function_name">功能名称</string>
+    <string name="nav_name">金英哲</string>
+    <string name="nav_location">ShenYang, China</string>
+    <string name="nav_open">打开</string>
+    <string name="nav_close">关闭</string>
+    <string name="menu_function_list">功能列表</string>
+    <string name="menu_common">通用计算器</string>
+    <string name="menu_create_function">创建功能</string>
+    <string name="menu_profile">轮廓</string>
+    <string name="menu_logout">登出</string>
+    <string name="menu_history">历史</string>
+    <string name="list_empty_function">该功能不存在。</string>
+    <string name="profile_wechat_payment">微信支付</string>
+    <string name="profile_comment">评论</string>
+    <string name="profile_support">支持</string>
+    <string name="wechat_recharge">充值</string>
+    <string name="wechat_detail">在这里，F是函数。</string>
+    <string name="calc_calculate">计算</string>
+    <string name="calc_alert_input_title">输入值</string>
+    <string name="calc_alert_input_detail">请输入参数值。</string>
+    <string name="calc_alert_delete_title">删除值</string>
+    <string name="calc_alert_delete_detail">您确定要删除此值吗？</string>
+    <string name="create_algorithm">算法</string>
+    <string name="create_alert_add">此功能没有任何参数。 请添加更多。</string>
+    <string name="item_create_description">描述</string>
+    <string name="item_create_name">名称</string>
+    <string name="setpara_add">添加参数</string>
+    <string name="setpara_edit">编辑参数</string>
+    <string name="setpara_hint_name">少于5个字符</string>
+    <string name="setpara_hint_desc">少于10个字符</string>
+    <string name="setpara_code_add">投入</string>
+    <string name="setpara_code_edit">编辑</string>
+    <string name="setpara_alert_delete">删除参数</string>
+    <string name="setpara_alert_deletedetail">您确定要删除此参数吗？</string>
+    <string name="setpara_alert_waring">华林</string>
+    <string name="setpara_alert_wrong">这个名字错了。 请改变它。</string>
+    <string name="formula_title">编辑算法</string>
+    <string name="formula_calculate">计算公式</string>
+    <string name="formula_save">保存</string>
+    <string name="formula_alert_detail">请输入您的功能名称。</string>
+    <string name="value_title">设定价值</string>
+    <string name="value_alert_title">设定值</string>
+    <string name="value_alert_detail">请输入您的价值。</string>
+    <string name="result_title">结果</string>
+    <string name="result_back">背部</string>
+    <string name="result_alert_title">保存结果</string>
+    <string name="result_alert_detail">请输入您的文件名。</string>
+    <string name="result_para_title">参数</string>
+    <string name="result_date">日期:</string>
+    <string name="result_maker">制作者:</string>
+    <string name="profile_classname">班级名称</string>
+    <string name="profile_last_update">最后更新</string>
+    <string name="profile_alert_detail">请输入班级名称。</string>
+    <string name="alert_waring">华林</string>
+    <string name="list_alert_class_detail">您应该输入您的班级名称。</string>
+    <string name="profile_function_report">功能报告</string>
+    <string name="nav_lbl_pay">支付</string>
+    <string name="nav_lbl_func">功能数量</string>
+    <string name="nav_lbl_rfunc">剩余数量</string>
+    <string name="formula_description">公式描述</string>
+
+    <string name="alert_waring_title">警告</string>
+    <string name="alert_para_able_detail">名称仅适用于 \'a~z \'和\'_ \'，\'0~9 \'。</string>
+    <string name="alert_server_error_detail">错误服务器，请在几分钟后试用。</string>
+    <string name="alert_error_internet_detail">请检查您的互联网。</string>
+    <string name="guide_title">指南线</string>
+    <string name="guide_name_rule">类，函数和参数的名称仅由\'a~z\'，\'_\'和\'0~9\'组成。</string>
+    <string name="guide_name">1。 名称定义</string>
+    <string name="guide_function">2。 创建功能</string>
+    <string name="guide_funtion_rule_01">所有功能必须至少有一个参数。</string>
+    <string name="guide_function_rule_02">所有功能必须只有一个算法。</string>
+    <string name="guide_alogrithm">3。 编辑算法</string>
+    <string name="guide_algorithm_rule_01">输入功能描述的编辑视图是编辑屏幕的顶部。</string>
+    <string name="guide_algorithm_rule_02">功能的主要参数是键盘的顶部。</string>
+    <string name="guide_algorithm_rule_03">p1~p7是辅助参数。</string>
+    <string name="guide_algorithm_rule_04">关键字全部是28个关键字。</string>
+    <string name="guide_algorithm_rule_05"><![CDATA[关键字由数字键（0~9），操作键（/，*，+，-），逻辑键（<，>，if），包键（（，），{，}）和其他键组成 （AC，Enter（En），Back（<），Space（_），Result（Re），Equal（=），Point（。））。]]></string>
+    <string name="guide_algorithm_rule_06">输入所有密钥后，用户必须输入空格键（_）。</string>
+    <string name="guide_algorithm_rule_07">输入包含“Re”的句子后，用户无法编辑更多内容。</string>
+    <string name="guide_algorithm_rule_08">在代码句末尾，用户必须输入“En”（Enter）键。</string>
+    <string name="guide_algorithm_rule_09">输入所有参数时，代码会自动在它们前面添加“$”符号。</string>
+    <string name="guide_algorithm_rule_10">当输入回车键 (“En”), 时，代码自动在其末尾添加“ ;”符号。</string>
+    <string name="guide_algorithm_rule_11">在下面，显示示例以编辑代码。</string>
+    <string name="guide_algorithm_rule_12">当知道三条边时，获取三角形区域的算法。</string>
+    <string name="guide_algorithm_rule_13"><![CDATA[$p1 = ( $a + $b + $c ) / 2 ;
+        \n$p2 = $p1 - $a ;
+        \n$p3 = $p1 - $b ;
+        \n$p4 = $p1 - $c ;
+        \nif ( $p1 < 0 ) {
+        \n$p1 = 0 ;
+        \n}
+        \nif ( $p2 < 0 ) {
+        \n$p2 = 0 ;
+        \n}
+        \nif ( $p3 < 0 ) {
+        \n$p3 = 0 ;
+        \n}
+        \n$Re = $p1 * $p2 * $p3 * $p4 ;
+        \n 在这里，a，b和c是三角形的三个边的长度。
+    ]]></string>
+    <string name="guide_algorithm_rule_14"><u>如果您看到指南的视频，请单击此处。</u></string>
+    <string name="guide_algorithm_rule_15"><u>如果您有任何疑问，请点击这里。</u></string>
+    <string name="guide_calculate">4。 计算算法</string>
+    <string name="guide_calculate_rule_01">在计算算法时，输入值是使用值文档（* .txt）。</string>
+    <string name="guide_calculate_rule_02">例1（参数计数为2.）:
+        \n1.5,10.5
+        \n2.5,9.5
+        \n3.5,8.5
+        \n4.5,7.5
+        \n5.5,6.5
+    </string>
+    <string name="guide_calculate_rule_03">例2（参数计数为3.）:
+        \n1.5,10.5,6.5
+        \n2.5,9.5,7.5
+        \n3.5,8.5,8.5
+        \n4.5,7.5,9.5
+        \n5.5,6.5,10.5
+    </string>
+
+    <string name="comment_submit">提交</string>
+    <string name="comment_content">内容</string>
+    <string name="comment_detail_hint">请在此处编辑您的评论。</string>
+    <string name="alert_empty_detail">请输入一些单词。</string>
+    <string name="payment_btn_01">0.99 元 / 1 功能</string>
+    <string name="payment_btn_02">24.95 元 / 30 功能</string>
+    <string name="payment_btn_03">59.9 元 / 80 功能</string>
+    <string name="payment_btn_04">89.5 元 / 150 功能</string>
+
+    <string name="progress_title">载入中</string>
+    <string name="progress_detail">从服务器获取一些数据......</string>
+
+    <string name="history_adpater_payed">谢谢。 你付出了代价 %s元.</string>
+    <string name="pay_unit">元</string>
+    <string name="help_title">帮助编辑</string>
+    <string name="help_action">帮助（20 元）</string>
+    <string name="call_support_team">致电支持团队</string>
+
+    <string name="main_empty_select">你应该选择更多的功能。</string>
+    <string name="calc_title">计算设置</string>
+    <string name="result_title_activity">计算结果</string>
+    <string name="menu_project_list">项目清单</string>
+    <string name="list_empty_project">空项目。</string>
+    <string name="project_hint_name">项目名</string>
+    <string name="create_project_title">创建项目</string>
+    <string name="create_project_pay">创建 (1 元)</string>
+    <string name="create_toast_name">您应该输入项目名称。</string>
+    <string name="project_detail_title">项目细节</string>
+    <string name="project_detail_parameters">参数</string>
+    <string name="project_detail_function">功能</string>
+    <string name="guide_step1_title">1。 准备创建功能。</string>
+    <string name="guide_step2_title">2。 设置功能参数。</string>
+    <string name="guide_step3_title">3。 编辑功能的算法。</string>
+    <string name="guide_step4_title">4。 测试创建的函数。</string>
+    <string name="guide_step5_title">5。 保存创建功能。</string>
+    <string name="guide_step1_desc1">第一步是准备步骤。</string>
+    <string name="guide_step1_desc2">所有用户都可以在此处了解创建功能的每个步骤。</string>
+    <string name="guide_step1_desc3">如果您完成每一步，您可以按“下一步”按钮并转到下一步。</string>
+    <string name="set_para_detail">您应该为创建函数设置一些参数。 如果添加，您可以单击“+”按钮。 如果编辑，则可以单击列表项。 如果转到下一步，请单击“下一步”按钮。</string>
+    <string name="edit_algo_detail">您应该编辑一些用于创建函数的算法。 如果完成编辑算法，请单击“下一步”按钮。</string>
+    <string name="test_algorithm_title">测试算法</string>
+    <string name="common_next">下一步</string>
+    <string name="alert_test_detail">您应该单击“测试”按钮。</string>
+    <string name="common_test">测试</string>
+    <string name="setting_parameters_title">设置参数</string>
+    <string name="test_algorithm">算法</string>
+    <string name="common_result">结果</string>
+    <string name="test_error_linenumber">错误行号： %d</string>
+    <string name="common_save">保存</string>
+    <string name="save_algorithm_title">保存算法</string>
+    <string name="save_function_name">功能名称</string>
+    <string name="save_function_description">功能说明</string>
+    <string name="save_algorithm_detail">算法细节</string>
+    <string name="common_success">成功</string>
+    <string name="guide_step1_ptitle">1。 准备创建项目。</string>
+    <string name="guide_step2_ptitle">2。 选择项目功能。</string>
+    <string name="guide_step3_ptitle">3。 保存已创建的项目。</string>
+    <string name="guide_step1_pdesc1">第一步是准备步骤。</string>
+    <string name="guide_step1_pdesc2">所有用户都可以在此处了解创建项目的每个步骤。</string>
+    <string name="guide_step1_pdesc3">如果完成每个步骤，可以按“下一步”按钮并转到下一步。</string>
+    <string name="function_detail_title">功能细节</string>
+    <string name="common_parameters">参数</string>
+    <string name="function_detail_algorithm">算法</string>
+    <string name="common_edit">编辑</string>
+    <string name="select_functions_title">选择功能</string>
+    <string name="sel_function_description">您可以选择一些用于创建项目的功能。 在这里，您应该选择一些具有相同参数的函数。</string>
+    <string name="func_item_param">%d 参数</string>
+    <string name="save_project_detail">在这里，您可以按项目名称创建新项目。 但是你需要付出一些钱。</string>
+    <string name="save_project_title">保存项目</string>
+
+</resources>

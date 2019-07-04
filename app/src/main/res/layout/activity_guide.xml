@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".GuideActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/top_back_shadow">
+
+        <LinearLayout
+            android:id="@+id/llt_main_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="onClickBackIcon">
+            <ImageView
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="10dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ico_back"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+        <TextView
+            style="@style/txt_b_r_20"
+            android:gravity="center"
+            android:text="@string/guide_title"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+            <ImageView
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="10dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/txt_b_r_16_n"
+                android:text="@string/guide_name"/>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                style="@style/txt_b_r_12_n"
+                android:alpha="0.7"
+                android:text="@string/guide_name_rule"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                style="@style/txt_b_r_16_n"
+                android:text="@string/guide_function"/>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                style="@style/txt_b_r_12_n"
+                android:alpha="0.7"
+                android:text="@string/guide_funtion_rule_01"/>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                style="@style/txt_b_r_12_n"
+                android:alpha="0.7"
+                android:text="@string/guide_function_rule_02"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                style="@style/txt_b_r_16_n"
+                android:text="@string/guide_alogrithm"/>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                style="@style/txt_b_r_12_n"
+                android:alpha="0.7"
+                android:text="@string/guide_algorithm_rule_01"/>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                style="@style/txt_b_r_12_n"
+                android:alpha="0.7"
+                android:text="@string/guide_algorithm_rule_02"/>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                style="@style/txt_b_r_12_n"
+                android:alpha="0.7"
+                android:text="@string/guide_algorithm_rule_03"/>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                style="@style/txt_b_r_12_n"
+                android:alpha="0.7"
+                android:text="@string/guide_algorithm_rule_04"/>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                style="@style/txt_b_r_12_n"
+                android:alpha="0.7"
+                android:text="@string/guide_algorithm_rule_05"/>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                style="@style/txt_b_r_12_n"
+                android:alpha="0.7"
+                android:text="@string/guide_algorithm_rule_06"/>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                style="@style/txt_b_r_12_n"
+                android:alpha="0.7"
+                android:text="@string/guide_algorithm_rule_07"/>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                style="@style/txt_b_r_12_n"
+                android:alpha="0.7"
+                android:text="@string/guide_algorithm_rule_08"/>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                style="@style/txt_b_r_12_n"
+                android:alpha="0.7"
+                android:text="@string/guide_algorithm_rule_09"/>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                style="@style/txt_b_r_12_n"
+                android:alpha="0.7"
+                android:text="@string/guide_algorithm_rule_10"/>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                style="@style/txt_b_r_12_n"
+                android:alpha="0.7"
+                android:text="@string/guide_algorithm_rule_11"/>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                style="@style/txt_b_r_12_n"
+                android:alpha="0.7"
+                android:text="@string/guide_algorithm_rule_12"/>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp"
+                style="@style/txt_b_r_12_n"
+                android:alpha="0.7"
+                android:text="@string/guide_algorithm_rule_13"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                style="@style/txt_b_r_16_n"
+                android:text="@string/guide_calculate"/>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                style="@style/txt_b_r_12_n"
+                android:alpha="0.7"
+                android:text="@string/guide_calculate_rule_01"/>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                style="@style/txt_b_r_12_n"
+                android:alpha="0.7"
+                android:text="@string/guide_calculate_rule_02"/>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                style="@style/txt_b_r_12_n"
+                android:alpha="0.7"
+                android:text="@string/guide_calculate_rule_03"/>
+
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                style="@style/txt_b_r_12_n"
+                android:alpha="0.7"
+                android:textColor="@android:color/holo_blue_light"
+                android:text="@string/guide_algorithm_rule_14"/>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                style="@style/txt_b_r_12_n"
+                android:alpha="0.7"
+                android:textColor="@android:color/holo_blue_light"
+                android:text="@string/guide_algorithm_rule_15"
+                android:onClick="onClickLblSupport"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="20sp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    
+</LinearLayout>

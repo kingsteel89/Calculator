@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".SaveAlgorithmActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/top_back_shadow">
+
+        <LinearLayout
+            android:id="@+id/llt_main_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="onClickBackIcon">
+            <ImageView
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="10dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ico_back"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+        <TextView
+            style="@style/txt_b_r_20"
+            android:gravity="center"
+            android:text="@string/save_algorithm_title" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+            <ImageView
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="10dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            style="@style/txt_process.done"
+            android:text="1"/>
+        <LinearLayout
+            style="@style/llt_spec_line"/>
+        <TextView
+            style="@style/txt_process.done"
+            android:text="2"/>
+        <LinearLayout
+            style="@style/llt_spec_line"/>
+        <TextView
+            style="@style/txt_process.done"
+            android:text="3"/>
+        <LinearLayout
+            style="@style/llt_spec_line"/>
+        <TextView
+            style="@style/txt_process.done"
+            android:text="4"/>
+        <LinearLayout
+            style="@style/llt_spec_line"/>
+        <TextView
+            style="@style/txt_process.doing"
+            android:text="5"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/txt_save_algo_name"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            style="@style/txt_b_r_15"
+            android:hint="@string/save_function_name"
+            android:textColorHint="@color/txt_hint"/>
+        <EditText
+            android:id="@+id/txt_save_algo_description"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            style="@style/txt_b_r_15"
+            android:hint="@string/save_function_description"
+            android:textColorHint="@color/txt_hint"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                style="@style/txt_b_r_15"
+                android:gravity="center"
+                android:text="@string/save_algorithm_detail"/>
+            <TextView
+                android:id="@+id/lbl_save_detail"
+                android:layout_marginTop="10dp"
+                style="@style/txt_b_r_15" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_marginBottom="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btn_test_test"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            style="@style/btn_title"
+            android:text="@string/common_save"
+            android:onClick="onClickBtnTest"/>
+    </LinearLayout>
+    
+</LinearLayout>

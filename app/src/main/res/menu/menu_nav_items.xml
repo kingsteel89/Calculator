@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item android:id="@+id/nav_item_seven"
+            android:icon="@drawable/ico_list_project"
+            android:title="@string/menu_project_list" />
+        <item android:id="@+id/nav_item_one"
+            android:icon="@drawable/ico_list_functions"
+            android:title="@string/menu_function_list" />
+        <item android:id="@+id/nav_item_eight"
+            android:icon="@drawable/ico_create_project"
+            android:title="@string/create_project_title" />
+        <item android:id="@+id/nav_item_three"
+            android:icon="@drawable/ico_create_function"
+            android:title="@string/menu_create_function" />
+        <item android:id="@+id/nav_item_two"
+            android:icon="@drawable/ico_calc"
+            android:title="@string/menu_common" />
+    </group>
+
+    <group android:id="@+id/grp_menu_01">
+        <item android:id="@+id/nav_item_four"
+            android:icon="@drawable/ico_history"
+            android:title="@string/menu_history" />
+        <item android:id="@+id/nav_item_five"
+            android:icon="@drawable/ico_profile"
+            android:title="@string/menu_profile" />
+    </group>
+
+    <group android:id="@+id/grp_menu_02">
+        <item android:id="@+id/nav_item_six"
+            android:icon="@drawable/ico_logout"
+            android:title="@string/menu_logout" />
+    </group>
+
+</menu>
