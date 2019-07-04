@@ -37,6 +37,7 @@ dependencies {
     implementation 'com.alibaba:fastjson:1.1.68.android'
     implementation 'com.vise.xiaoyaoyou:viselog:1.0.0'
     implementation 'com.squareup.okhttp3:okhttp:3.0.1'
+    implementation 'com.github.mkhoiron:Actionsheet-android:0.1'
 
     implementation files('libs/libammsdk.jar')
     implementation files('libs/okhttputils-2_6_2.jar')

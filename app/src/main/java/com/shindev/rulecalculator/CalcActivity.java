@@ -1,10 +1,12 @@
 package com.shindev.rulecalculator;
 
 import android.Manifest;
+import android.actionsheet.demo.com.khoiron.actionsheetiosforandroid.ActionSheet;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
@@ -29,6 +31,7 @@ import org.json.JSONObject;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 
 public class CalcActivity extends AppCompatActivity {
 
@@ -126,10 +129,30 @@ public class CalcActivity extends AppCompatActivity {
     }
 
     public void onClickLltAdd(View view) {
-        Intent intent = new Intent();
-        intent.setAction(Intent.ACTION_OPEN_DOCUMENT);
-        intent.setType("*/*");
-        startActivityForResult(intent, 0);
+        ArrayList<String> data = new ArrayList<>();
+
+        data.add(getString(R.string.act_content_01));
+        data.add(getString(R.string.act_content_02));
+
+        new ActionSheet(this, data)
+                .setTitle(getString(R.string.actionsheet_title))
+                .setCancelTitle(getString(R.string.common_cancel))
+                .setColorTitle(Color.parseColor("#999999"))
+                .setColorTitleCancel(Color.parseColor("#d25841"))
+                .setColorData(Color.parseColor("#278ae7"))
+                .create((data1, position) -> {
+                    switch (position){
+                        case 0:
+                            Global.showOtherActivity(this, AddParaValueActivity.class, 0);
+                            break;
+                        case 1:
+                            Intent intent = new Intent();
+                            intent.setAction(Intent.ACTION_OPEN_DOCUMENT);
+                            intent.setType("*/*");
+                            startActivityForResult(intent, 0);
+                            break;
+                    }
+                });
     }
 
     @Override

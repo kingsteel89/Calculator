@@ -243,5 +243,9 @@
     <string name="func_item_param">%d Parameters</string>
     <string name="save_project_detail">In here, you can create a new project by your project name. But you need to pay some moeny for it.</string>
     <string name="save_project_title">Save Project</string>
+    <string name="actionsheet_title">Please choose input method.</string>
+    <string name="common_cancel">Cancel</string>
+    <string name="act_content_01">Edit Parameter Values</string>
+    <string name="act_content_02">Select TXT File</string>
 
 </resources>

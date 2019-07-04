@@ -36,6 +36,10 @@
 
         <activity
             android:screenOrientation="portrait"
+            android:name=".AddParaValueActivity" />
+
+        <activity
+            android:screenOrientation="portrait"
             android:name=".GuideActivity" />
 
         <activity

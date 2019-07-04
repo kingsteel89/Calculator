@@ -194,5 +194,9 @@
     <string name="func_item_param">%d 参数</string>
     <string name="save_project_detail">在这里，您可以按项目名称创建新项目。 但是你需要付出一些钱。</string>
     <string name="save_project_title">保存项目</string>
+    <string name="actionsheet_title">请选择输入法。</string>
+    <string name="common_cancel">取消</string>
+    <string name="act_content_01">编辑参数值</string>
+    <string name="act_content_02">选择TXT文件</string>
 
 </resources>

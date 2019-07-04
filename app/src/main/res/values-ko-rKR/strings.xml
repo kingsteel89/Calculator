@@ -194,5 +194,9 @@
     <string name="func_item_param">%d 변수</string>
     <string name="save_project_detail">여기서는 당신이 원하는 프로젝트의 이름에 따라 함수를 만들수 있습니다. 그러나 당신은 반드시 돈을 지불하여야 합니다.</string>
     <string name="save_project_title">프로젝트 보관</string>
+    <string name="actionsheet_title">입력방식을 선택하시오.</string>
+    <string name="common_cancel">취소</string>
+    <string name="act_content_01">변수편집</string>
+    <string name="act_content_02">TXT파일 선택</string>
 
 </resources>
