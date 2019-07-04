@@ -75,7 +75,7 @@ public class WXPayEntryActivity extends Activity implements IWXAPIEventHandler{
 					params.put("content", Global.gReportContent);
 				}
 
-				if (Global.gPayed.equals("1000")) {
+				if (Global.gPayed.equals("100")) {
 					String str_function = Global.gSelFuncItems.get(0).id;
 					for (int i = 1; i< Global.gSelFuncItems.size(); i++) {
 						str_function = str_function + "," + Global.gSelFuncItems.get(i).id;

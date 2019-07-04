@@ -51,12 +51,9 @@ public class ProjectFragment extends Fragment {
         activity.llt_search.setVisibility(View.VISIBLE);
 
         lst_project = view.findViewById(R.id.lst_project_item);
-        lst_project.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Global.gSelProject = ary_show.get(position);
-                Global.showOtherActivity(getActivity(), ProjectDetailActivity.class, 0);
-            }
+        lst_project.setOnItemClickListener((parent, view1, position, id) -> {
+            Global.gSelProject = ary_show.get(position);
+            Global.showOtherActivity(getActivity(), ProjectDetailActivity.class, 0);
         });
 
         dialog = ProgressDialog.show(activity, getString(R.string.progress_title), getString(R.string.progress_detail));

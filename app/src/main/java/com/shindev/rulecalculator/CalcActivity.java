@@ -3,7 +3,6 @@ package com.shindev.rulecalculator;
 import android.Manifest;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Build;
@@ -28,9 +27,8 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class CalcActivity extends AppCompatActivity {
 
@@ -49,8 +47,8 @@ public class CalcActivity extends AppCompatActivity {
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             getWindow().setStatusBarColor(getResources().getColor(R.color.txt_black, this.getTheme()));
-        } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            getWindow().setStatusBarColor(getResources().getColor(R.color.txt_black));
+        } else {
+            getWindow().setStatusBarColor(getColor(R.color.txt_black));
         }
 
         initDatas();
@@ -145,11 +143,8 @@ public class CalcActivity extends AppCompatActivity {
 
             Global.gParamValues.clear();
 
-            File file = new File(data.getData().getPath());
-            String path = file.getAbsolutePath();
-            String newPath = "/storage/emulated/0/" + path.split(":")[1];
             try {
-                BufferedReader br = new BufferedReader(new FileReader(newPath));
+                BufferedReader br = new BufferedReader(new InputStreamReader(getContentResolver().openInputStream(data.getData())));
                 String line;
 
                 while ((line = br.readLine()) != null) {
@@ -172,12 +167,10 @@ public class CalcActivity extends AppCompatActivity {
         new AlertDialog.Builder(CalcActivity.this)
                 .setTitle(R.string.calc_alert_delete_title)
                 .setMessage(R.string.calc_alert_delete_detail)
-                .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int which) {
-                        // Continue with delete operation
-                        Global.gParamValues.remove(index);
-                        mAdapter.notifyDataSetChanged();
-                    }
+                .setPositiveButton(android.R.string.yes, (dialog, which) -> {
+                    // Continue with delete operation
+                    Global.gParamValues.remove(index);
+                    mAdapter.notifyDataSetChanged();
                 })
                 .setNegativeButton(android.R.string.no, null)
                 .setIcon(android.R.drawable.ic_dialog_alert)

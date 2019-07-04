@@ -6,7 +6,6 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.shindev.rulecalculator.adapters.CreateParaAdapter;
@@ -34,17 +33,14 @@ public class ParameterActivity extends AppCompatActivity {
 
     private void initUIView() {
         lst_para = findViewById(R.id.lst_parameter_main);
-        lst_para.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                if (position == 0) {
-                    return;
-                }
-                Global.gSelParaItem = Global.gCreateParams.get(position - 1);
-                gSelIndex = position - 1;
-
-                Global.showOtherActivity(ParameterActivity.this, ParaSettingActivity.class, 0);
+        lst_para.setOnItemClickListener((parent, view, position, id) -> {
+            if (position == 0) {
+                return;
             }
+            Global.gSelParaItem = Global.gCreateParams.get(position - 1);
+            gSelIndex = position - 1;
+
+            Global.showOtherActivity(ParameterActivity.this, ParaSettingActivity.class, 0);
         });
         mAdapter = new CreateParaAdapter(Global.gContext, Global.gCreateParams);
         lst_para.setAdapter(mAdapter);
