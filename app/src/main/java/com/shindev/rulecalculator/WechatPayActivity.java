@@ -30,9 +30,8 @@ import java.util.Random;
 import static com.shindev.rulecalculator.common.AppConstant.APP_ID_WX;
 
 public class WechatPayActivity extends AppCompatActivity {
-    private static final String TAG = "MicroMsg.SDKSample.PayActivity";
 
-    PayReq req;
+    private PayReq req;
     final IWXAPI msgApi = WXAPIFactory.createWXAPI(this, APP_ID_WX, true);
     Map<String,String> resultunifiedorder;
     StringBuffer sb;
@@ -46,8 +45,8 @@ public class WechatPayActivity extends AppCompatActivity {
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             getWindow().setStatusBarColor(getResources().getColor(R.color.txt_black, this.getTheme()));
-        } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            getWindow().setStatusBarColor(getResources().getColor(R.color.txt_black));
+        } else {
+            getWindow().setStatusBarColor(getColor(R.color.txt_black));
         }
 
         req = new PayReq();
