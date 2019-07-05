@@ -1,17 +1,16 @@
 package com.shindev.rulecalculator.wxapi;
 
 import android.app.Activity;
-import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.shindev.rulecalculator.CalcActivity;
 import com.shindev.rulecalculator.R;
+import com.shindev.rulecalculator.ResultActivity;
 import com.shindev.rulecalculator.common.AppConstant;
 import com.shindev.rulecalculator.common.Global;
-import com.shindev.rulecalculator.common.SharePreferenceUtil;
 import com.tencent.mm.sdk.constants.ConstantsAPI;
 import com.tencent.mm.sdk.modelbase.BaseReq;
 import com.tencent.mm.sdk.modelbase.BaseResp;
@@ -96,6 +95,10 @@ public class WXPayEntryActivity extends Activity implements IWXAPIEventHandler{
 
 							@Override
 							public void onResponse(String response, int id) {
+								if (Global.gPayed.equals("49")) {
+								    CalcActivity.calcActivity.onNextActivtiyEvent();
+									return;
+								}
 								try {
 									JSONObject obj = new JSONObject(response);
 									JSONObject obj_result = obj.getJSONObject("result");

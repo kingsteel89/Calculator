@@ -23,7 +23,7 @@
     <string name="profile_support">지원팀</string>
     <string name="wechat_recharge">충전</string>
     <string name="wechat_detail">여기서, F는 함수개수 입니다.</string>
-    <string name="calc_calculate">계산</string>
+    <string name="calc_calculate">계산 (0.49 원)</string>
     <string name="calc_alert_input_title">자료입력</string>
     <string name="calc_alert_input_detail">변수값을 입력하시오.</string>
     <string name="calc_alert_delete_title">자료 삭제</string>

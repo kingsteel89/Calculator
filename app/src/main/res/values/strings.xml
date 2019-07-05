@@ -57,7 +57,7 @@
     <string name="divide" translatable="false">÷</string>
 
     <string name="calc_function" translatable="false">A(长) * B(宽)</string>
-    <string name="calc_calculate">Calculate</string>
+    <string name="calc_calculate">Calc (0.49 CNY)</string>
     <string name="calc_alert_input_title">Input Value</string>
     <string name="calc_alert_input_detail">Please enter value of parameters.</string>
     <string name="calc_alert_delete_title">Delete Value</string>
@@ -182,6 +182,7 @@
     <string name="payed_btn_03" translatable="false">5990</string>
     <string name="payed_btn_04" translatable="false">8950</string>
     <string name="payed_btn_05" translatable="false">2000</string>
+    <string name="payed_btn_06" translatable="false">49</string>
 
     <string name="history_adpater_payed">Thanks. You just payed %sCNY.</string>
     <string name="pay_unit">CNY</string>

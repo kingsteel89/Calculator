@@ -23,7 +23,7 @@
     <string name="profile_support">支持</string>
     <string name="wechat_recharge">充值</string>
     <string name="wechat_detail">在这里，F是函数。</string>
-    <string name="calc_calculate">计算</string>
+    <string name="calc_calculate">计算 (0.49 元)</string>
     <string name="calc_alert_input_title">输入值</string>
     <string name="calc_alert_input_detail">请输入参数值。</string>
     <string name="calc_alert_delete_title">删除值</string>
