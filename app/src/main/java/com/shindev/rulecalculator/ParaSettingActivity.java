@@ -1,7 +1,6 @@
 package com.shindev.rulecalculator;
 
 import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -46,41 +45,33 @@ public class ParaSettingActivity extends AppCompatActivity {
 
         lbl_title = findViewById(R.id.lbl_setpara_title);
         llt_delete = findViewById(R.id.llt_setpara_delete);
-        llt_delete.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                onClickDeleteAlert();
-            }
-        });
+        llt_delete.setOnClickListener(v -> onClickDeleteAlert());
         txt_name = findViewById(R.id.txt_setpara_name);
         txt_desc = findViewById(R.id.txt_setpara_desc);
         btn_set = findViewById(R.id.btn_setpara_set);
-        btn_set.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                CreateParaItem item = new CreateParaItem();
-                item.id = String.valueOf(Global.gCreateParams.size());
-                item.name = txt_name.getText().toString();
-                if (!isCheckedValue()) {
-                    onShowCheckedAlert();
-                    return;
-                }
-                if (!Global.isCheckSpelling(item.name)) {
-                    onShowAavailableAlert();
-                    return;
-                }
-                String str_desc = txt_desc.getText().toString();
-                if (str_desc.length() == 0) {
-                    str_desc = getString(R.string.item_create_description);
-                }
-                item.description = str_desc;
-                if (isAdd) {
-                    Global.gCreateParams.add(item);
-                } else {
-                    Global.gCreateParams.set(gSelIndex, item);
-                }
-                onClickBackIcon(null);
+        btn_set.setOnClickListener(v -> {
+            CreateParaItem item = new CreateParaItem();
+            item.id = String.valueOf(Global.gCreateParams.size());
+            item.name = txt_name.getText().toString();
+            if (!isCheckedValue()) {
+                onShowCheckedAlert();
+                return;
             }
+            if (!Global.isCheckSpelling(item.name)) {
+                onShowAavailableAlert();
+                return;
+            }
+            String str_desc = txt_desc.getText().toString();
+            if (str_desc.length() == 0) {
+                str_desc = getString(R.string.item_create_description);
+            }
+            item.description = str_desc;
+            if (isAdd) {
+                Global.gCreateParams.add(item);
+            } else {
+                Global.gCreateParams.set(gSelIndex, item);
+            }
+            onClickBackIcon(null);
         });
 
         if (isAdd) {
@@ -100,10 +91,8 @@ public class ParaSettingActivity extends AppCompatActivity {
         new AlertDialog.Builder(this)
                 .setTitle(R.string.alert_waring_title)
                 .setMessage(R.string.alert_para_able_detail)
-                .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int which) {
-                        // Continue with delete operation
-                    }
+                .setPositiveButton(android.R.string.ok, (dialog, which) -> {
+                    // Continue with delete operation
                 })
                 .setIcon(android.R.drawable.ic_dialog_alert)
                 .show();
@@ -113,10 +102,8 @@ public class ParaSettingActivity extends AppCompatActivity {
         new AlertDialog.Builder(this)
                 .setTitle(R.string.alert_waring_title)
                 .setMessage(R.string.setpara_alert_wrong)
-                .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int which) {
-                        // Continue with delete operation
-                    }
+                .setPositiveButton(android.R.string.ok, (dialog, which) -> {
+                    // Continue with delete operation
                 })
                 .setIcon(android.R.drawable.ic_dialog_alert)
                 .show();
@@ -140,12 +127,10 @@ public class ParaSettingActivity extends AppCompatActivity {
         new AlertDialog.Builder(this)
                 .setTitle(R.string.setpara_alert_delete)
                 .setMessage(R.string.setpara_alert_deletedetail)
-                .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int which) {
-                        // Continue with delete operation
-                        Global.gCreateParams.remove(gSelIndex);
-                        onClickBackIcon(null);
-                    }
+                .setPositiveButton(android.R.string.yes, (dialog, which) -> {
+                    // Continue with delete operation
+                    Global.gCreateParams.remove(gSelIndex);
+                    onClickBackIcon(null);
                 })
                 .setNegativeButton(android.R.string.no, null)
                 .setIcon(android.R.drawable.ic_dialog_alert)

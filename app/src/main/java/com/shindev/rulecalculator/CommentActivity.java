@@ -1,7 +1,6 @@
 package com.shindev.rulecalculator;
 
 import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -28,8 +27,8 @@ public class CommentActivity extends AppCompatActivity {
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             getWindow().setStatusBarColor(getResources().getColor(R.color.txt_black, this.getTheme()));
-        } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            getWindow().setStatusBarColor(getResources().getColor(R.color.txt_black));
+        } else {
+            getWindow().setStatusBarColor(getColor(R.color.txt_black));
         }
         initUIVIew();
     }
@@ -77,10 +76,8 @@ public class CommentActivity extends AppCompatActivity {
         new AlertDialog.Builder(this)
                 .setTitle(R.string.alert_waring_title)
                 .setMessage(R.string.alert_empty_detail)
-                .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int which) {
-                        // Continue with delete operation
-                    }
+                .setPositiveButton(android.R.string.ok, (dialog, which) -> {
+                    // Continue with delete operation
                 })
                 .setIcon(android.R.drawable.ic_dialog_alert)
                 .show();

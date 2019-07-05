@@ -13,10 +13,7 @@ import com.shindev.rulecalculator.R;
 
 import java.io.File;
 import java.io.FileWriter;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
-import java.util.Locale;
 
 public class Global {
     static public Context gContext;
@@ -107,18 +104,17 @@ public class Global {
         if (str.length() == 0) {
             return false;
         }
+        String str_first_able = "abcdefghijklmnopqrstuvwxyz";
+        String str_first = Character.toString(str.charAt(0));
+        if (!str_first_able.contains(str_first)) {
+            return false;
+        }
         String str_able = "abcdefghijklmnopqrstuvwxyz_1234567890";
         for (int i = 1; i < str.length(); i++) {
             String letter = Character.toString(str.charAt(i));
             if (!str_able.contains(letter)) {
                 return false;
             }
-        }
-        String str_first_able = "abcdefghijklmnopqrstuvwxyz";
-        String str_first = Character.toString(str.charAt(0));
-
-        if (!str_first_able.contains(str_first)) {
-            return false;
         }
         return true;
     }

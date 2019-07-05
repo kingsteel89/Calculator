@@ -21,8 +21,8 @@ public class SupportActivity extends AppCompatActivity {
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             getWindow().setStatusBarColor(getResources().getColor(R.color.txt_black, this.getTheme()));
-        } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            getWindow().setStatusBarColor(getResources().getColor(R.color.txt_black));
+        } else {
+            getWindow().setStatusBarColor(getColor(R.color.txt_black));
         }
     }
 

@@ -2,7 +2,6 @@ package com.shindev.rulecalculator;
 
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
-import android.content.DialogInterface;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -18,13 +17,10 @@ import com.shindev.rulecalculator.common.Global;
 import com.zhy.http.okhttp.OkHttpUtils;
 import com.zhy.http.okhttp.callback.StringCallback;
 
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
@@ -54,15 +50,12 @@ public class TestAlgorithmActivity extends AppCompatActivity {
 
     private void initUIView() {
         btn_next = findViewById(R.id.btn_test_next);
-        btn_next.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (!isChecked) {
-                    onShowWaringAlert();
-                    return;
-                }
-                Global.showOtherActivity(TestAlgorithmActivity.this, SaveAlgorithmActivity.class, 0);
+        btn_next.setOnClickListener(v -> {
+            if (!isChecked) {
+                onShowWaringAlert();
+                return;
             }
+            Global.showOtherActivity(TestAlgorithmActivity.this, SaveAlgorithmActivity.class, 0);
         });
         lbl_algorithm = findViewById(R.id.lbl_test_algorithm);
         lbl_algorithm.setText(Global.gAlgorithm);
@@ -78,10 +71,8 @@ public class TestAlgorithmActivity extends AppCompatActivity {
         new AlertDialog.Builder(this)
                 .setTitle(R.string.setpara_alert_waring)
                 .setMessage(R.string.alert_test_detail)
-                .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int which) {
-                        // Continue with delete operation
-                    }
+                .setPositiveButton(android.R.string.ok, (dialog, which) -> {
+                    // Continue with delete operation
                 })
                 .setIcon(android.R.drawable.ic_dialog_alert)
                 .show();

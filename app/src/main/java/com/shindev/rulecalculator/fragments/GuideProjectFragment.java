@@ -29,11 +29,6 @@ public class GuideProjectFragment extends Fragment {
         activity.llt_search.setVisibility(View.GONE);
 
         Button btn_next = view.findViewById(R.id.btn_gfunc_next);
-        btn_next.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Global.showOtherActivity(getActivity(), SelFunctionActivity.class, 0);
-            }
-        });
+        btn_next.setOnClickListener(v -> Global.showOtherActivity(getActivity(), SelFunctionActivity.class, 0));
     }
 }

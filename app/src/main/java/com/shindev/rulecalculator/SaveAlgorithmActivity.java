@@ -2,7 +2,6 @@ package com.shindev.rulecalculator;
 
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
-import android.content.DialogInterface;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -24,7 +23,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class SaveAlgorithmActivity extends AppCompatActivity {
-    private TextView lbl_detail;
     private EditText txt_name, txt_description;
 
     private String str_formula, str_name, str_description;
@@ -46,7 +44,7 @@ public class SaveAlgorithmActivity extends AppCompatActivity {
     }
 
     private void initUIView() {
-        lbl_detail = findViewById(R.id.lbl_save_detail);
+        TextView lbl_detail = findViewById(R.id.lbl_save_detail);
         lbl_detail.setText(Global.gAlgorithm);
 
         txt_name = findViewById(R.id.txt_save_algo_name);

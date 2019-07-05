@@ -10,7 +10,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.shindev.rulecalculator.AddParaValueActivity;
-import com.shindev.rulecalculator.CalcActivity;
 import com.shindev.rulecalculator.R;
 import com.shindev.rulecalculator.common.ParamInfo;
 

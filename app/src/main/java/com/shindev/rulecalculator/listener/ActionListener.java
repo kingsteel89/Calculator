@@ -6,9 +6,11 @@ import android.widget.EditText;
 import com.shindev.rulecalculator.fragments.CalcFragment;
 
 public class ActionListener implements View.OnClickListener {
-    CalcFragment fragment;
-    EditText calcText;
-    String action;
+
+    private CalcFragment fragment;
+    private EditText calcText;
+    private String action;
+
     public ActionListener(CalcFragment fragment, EditText calcText, String action){
         this.fragment = fragment;
         this.calcText = calcText;

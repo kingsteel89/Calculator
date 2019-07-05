@@ -11,7 +11,6 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.Window;
-import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.shindev.rulecalculator.common.AppConstant;
@@ -48,8 +47,8 @@ public class LoginActivity extends AppCompatActivity {
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             getWindow().setStatusBarColor(getResources().getColor(R.color.txt_black, this.getTheme()));
-        } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            getWindow().setStatusBarColor(getResources().getColor(R.color.txt_black));
+        } else {
+            getWindow().setStatusBarColor(getColor(R.color.txt_black));
         }
 
         api = WXAPIFactory.createWXAPI(this, APP_ID_WX, false);

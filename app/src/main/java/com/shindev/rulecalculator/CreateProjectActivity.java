@@ -221,9 +221,7 @@ public class CreateProjectActivity extends AppCompatActivity {
             String sign = genPackageSign(packageParams);
             packageParams.add(new BasicNameValuePair("sign", sign));
 
-            String xmlstring = toXml(packageParams);
-
-            return xmlstring;
+            return toXml(packageParams);
         } catch (Exception e) {
             return null;
         }
@@ -331,7 +329,7 @@ public class CreateProjectActivity extends AppCompatActivity {
         req.timeStamp = String.valueOf(genTimeStamp());
 
 
-        List<NameValuePair> signParams = new LinkedList<NameValuePair>();
+        List<NameValuePair> signParams = new LinkedList<>();
         signParams.add(new BasicNameValuePair("appid", req.appId));
         signParams.add(new BasicNameValuePair("noncestr", req.nonceStr));
         signParams.add(new BasicNameValuePair("package", req.packageValue));

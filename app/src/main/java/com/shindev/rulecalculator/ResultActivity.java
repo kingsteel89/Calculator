@@ -3,7 +3,6 @@ package com.shindev.rulecalculator;
 import android.Manifest;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Build;
@@ -24,12 +23,6 @@ import com.shindev.rulecalculator.common.AppConstant;
 import com.shindev.rulecalculator.common.FunctionItem;
 import com.shindev.rulecalculator.common.Global;
 import com.shindev.rulecalculator.common.ParamInfo;
-import com.tencent.mm.sdk.modelmsg.SendMessageToWX;
-import com.tencent.mm.sdk.modelmsg.WXMediaMessage;
-import com.tencent.mm.sdk.modelmsg.WXTextObject;
-import com.tencent.mm.sdk.modelpay.PayReq;
-import com.tencent.mm.sdk.openapi.IWXAPI;
-import com.tencent.mm.sdk.openapi.WXAPIFactory;
 import com.zhy.http.okhttp.OkHttpUtils;
 import com.zhy.http.okhttp.callback.StringCallback;
 
@@ -42,8 +35,6 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
-
-import static com.shindev.rulecalculator.common.AppConstant.APP_ID_WX;
 
 public class ResultActivity extends AppCompatActivity {
 
@@ -58,7 +49,8 @@ public class ResultActivity extends AppCompatActivity {
     int cnt_func = 0;
 
     String str_data = "";
-    final IWXAPI msgApi = WXAPIFactory.createWXAPI(this, APP_ID_WX, true);
+
+//    final IWXAPI msgApi = WXAPIFactory.createWXAPI(this, APP_ID_WX, true);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

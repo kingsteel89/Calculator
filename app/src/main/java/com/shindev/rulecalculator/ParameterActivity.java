@@ -1,7 +1,6 @@
 package com.shindev.rulecalculator;
 
 import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -54,10 +53,8 @@ public class ParameterActivity extends AppCompatActivity {
         new AlertDialog.Builder(this)
                 .setTitle(R.string.setpara_alert_waring)
                 .setMessage(R.string.create_alert_add)
-                .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int which) {
-                        // Continue with delete operation
-                    }
+                .setPositiveButton(android.R.string.ok, (dialog, which) -> {
+                    // Continue with delete operation
                 })
                 .setIcon(android.R.drawable.ic_dialog_alert)
                 .show();

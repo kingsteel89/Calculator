@@ -5,11 +5,10 @@ import android.widget.EditText;
 
 import com.shindev.rulecalculator.fragments.CalcFragment;
 
-
 public class OperationListener implements View.OnClickListener  {
-    EditText calcText;
-    String operation;
-    CalcFragment fragment;
+    private EditText calcText;
+    private String operation;
+    private CalcFragment fragment;
 
     public OperationListener(CalcFragment fragment, EditText calcText, String operation){
         this.fragment = fragment;

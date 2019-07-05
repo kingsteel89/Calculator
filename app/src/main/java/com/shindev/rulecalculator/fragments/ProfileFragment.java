@@ -1,14 +1,8 @@
 package com.shindev.rulecalculator.fragments;
 
-import android.Manifest;
 import android.app.AlertDialog;
 import android.app.Fragment;
-import android.content.DialogInterface;
-import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.net.Uri;
 import android.os.Bundle;
-import android.support.v4.app.ActivityCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -85,11 +79,9 @@ public class ProfileFragment extends Fragment {
         new AlertDialog.Builder(getActivity())
                 .setTitle(R.string.alert_waring_title)
                 .setMessage(R.string.alert_para_able_detail)
-                .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int which) {
-                        // Continue with delete operation
-                        onShowAlertClassName(view);
-                    }
+                .setPositiveButton(android.R.string.ok, (dialog, which) -> {
+                    // Continue with delete operation
+                    onShowAlertClassName(view);
                 })
                 .setIcon(android.R.drawable.ic_dialog_alert)
                 .show();
@@ -115,8 +107,7 @@ public class ProfileFragment extends Fragment {
                             int ret = obj.getInt("ret");
                             switch (ret) {
                                 case 10000:
-                                    String result = obj.getString("result");
-                                    Global.gUserInfo.classname = result;
+                                    Global.gUserInfo.classname = obj.getString("result");
                                     initFragmentUI(view);
                                     break;
                                 case 10001:

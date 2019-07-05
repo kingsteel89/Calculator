@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.shindev.rulecalculator.adapters.FunctionAdapter;
 import com.shindev.rulecalculator.adapters.SelFunctionAdapter;
 import com.shindev.rulecalculator.common.AppConstant;
 import com.shindev.rulecalculator.common.FunctionItem;

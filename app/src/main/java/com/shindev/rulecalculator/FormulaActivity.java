@@ -32,6 +32,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -44,7 +45,7 @@ public class FormulaActivity extends AppCompatActivity implements View.OnClickLi
 
     TextView lbl_formula;
     LinearLayout llt_params, llt_next, llt_key;
-    EditText txt_description;
+
     ArrayList<Button> ary_btn_params = new ArrayList<>();
     //btn tag 7
     Button btn_p1, btn_p2, btn_p3, btn_p4, btn_p5, btn_p6, btn_p7;
@@ -638,11 +639,8 @@ public class FormulaActivity extends AppCompatActivity implements View.OnClickLi
                 return;
             }
 
-            File file = new File(data.getData().getPath());
-            String path = file.getAbsolutePath();
-            String newPath = "/storage/emulated/0/" + path.split(":")[1];
             try {
-                BufferedReader br = new BufferedReader(new FileReader(newPath));
+                BufferedReader br = new BufferedReader(new InputStreamReader(getContentResolver().openInputStream(data.getData())));
                 String line;
                 String str_data = "";
 

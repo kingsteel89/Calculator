@@ -6,9 +6,9 @@ import android.widget.EditText;
 import com.shindev.rulecalculator.fragments.CalcFragment;
 
 public class NumberListener implements View.OnClickListener {
-    CalcFragment fragment;
-    EditText calcText;
-    long number;
+    private CalcFragment fragment;
+    private EditText calcText;
+    private long number;
 
 
     public NumberListener(CalcFragment fragment, EditText calcText, long number){

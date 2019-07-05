@@ -14,7 +14,6 @@ import com.shindev.rulecalculator.common.Global;
 
 public class AddParaValueActivity extends AppCompatActivity {
 
-    private ListView lst_value;
     private AddAdapter mAdapter;
 
     @Override
@@ -28,7 +27,7 @@ public class AddParaValueActivity extends AppCompatActivity {
     private void initUIView() {
         Global.gParamValues.clear();
 
-        lst_value = findViewById(R.id.lst_add_para);
+        ListView lst_value = findViewById(R.id.lst_add_para);
         mAdapter = new AddAdapter(this, Global.gSelParams, Global.gParamValues);
         lst_value.setAdapter(mAdapter);
     }

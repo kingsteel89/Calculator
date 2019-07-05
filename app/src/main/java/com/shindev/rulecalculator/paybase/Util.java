@@ -2,7 +2,6 @@ package com.shindev.rulecalculator.paybase;
 
 import android.graphics.Bitmap;
 import android.graphics.Bitmap.CompressFormat;
-import android.graphics.BitmapFactory;
 import android.util.Log;
 
 import org.apache.http.HttpResponse;
@@ -134,11 +133,11 @@ public class Util {
 	            }      
 	      
 				@Override
-				public void checkClientTrusted(X509Certificate[] chain, String authType) throws java.security.cert.CertificateException {
+				public void checkClientTrusted(X509Certificate[] chain, String authType) {
 				}
 
 				@Override
-				public void checkServerTrusted(X509Certificate[] chain,	String authType) throws java.security.cert.CertificateException {
+				public void checkServerTrusted(X509Certificate[] chain,	String authType) {
 				}  
 	        };      
 	      
@@ -146,7 +145,7 @@ public class Util {
 	    }      
 	      
 		@Override
-		public Socket createSocket(Socket socket, String host, int port, boolean autoClose) throws IOException, UnknownHostException {
+		public Socket createSocket(Socket socket, String host, int port, boolean autoClose) throws IOException {
 			return sslContext.getSocketFactory().createSocket(socket, host,	port, autoClose);
 		}
 

@@ -3,7 +3,6 @@ package com.shindev.rulecalculator;
 import android.Manifest;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.AsyncTask;
@@ -14,7 +13,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Xml;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.shindev.rulecalculator.common.AppConstant;
@@ -30,9 +28,8 @@ import org.apache.http.message.BasicNameValuePair;
 import org.xmlpull.v1.XmlPullParser;
 
 import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.io.StringReader;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -45,10 +42,10 @@ import static com.shindev.rulecalculator.common.AppConstant.APP_ID_WX;
 
 public class HelpActivity extends AppCompatActivity {
 
-    PayReq req;
-    final IWXAPI msgApi = WXAPIFactory.createWXAPI(this, APP_ID_WX, true);
-    Map<String,String> resultunifiedorder;
-    StringBuffer sb;
+    private PayReq req;
+    private final IWXAPI msgApi = WXAPIFactory.createWXAPI(this, APP_ID_WX, true);
+    private Map<String,String> resultunifiedorder;
+    private StringBuffer sb;
 
     String str_pay = "";
 
@@ -65,8 +62,8 @@ public class HelpActivity extends AppCompatActivity {
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             getWindow().setStatusBarColor(getResources().getColor(R.color.txt_black, this.getTheme()));
-        } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            getWindow().setStatusBarColor(getResources().getColor(R.color.txt_black));
+        } else {
+            getWindow().setStatusBarColor(getColor(R.color.txt_black));
         }
 
         req = new PayReq();
@@ -117,10 +114,8 @@ public class HelpActivity extends AppCompatActivity {
         new AlertDialog.Builder(this)
                 .setTitle(R.string.alert_waring_title)
                 .setMessage(R.string.setpara_alert_wrong)
-                .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int which) {
-                        // Continue with delete operation
-                    }
+                .setPositiveButton(android.R.string.ok, (dialog, which) -> {
+                    // Continue with delete operation
                 })
                 .setIcon(android.R.drawable.ic_dialog_alert)
                 .show();
@@ -130,10 +125,8 @@ public class HelpActivity extends AppCompatActivity {
         new AlertDialog.Builder(this)
                 .setTitle(R.string.alert_waring_title)
                 .setMessage(R.string.alert_para_able_detail)
-                .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int which) {
-                        // Continue with delete operation
-                    }
+                .setPositiveButton(android.R.string.ok, (dialog, which) -> {
+                    // Continue with delete operation
                 })
                 .setIcon(android.R.drawable.ic_dialog_alert)
                 .show();
@@ -150,11 +143,8 @@ public class HelpActivity extends AppCompatActivity {
 
             ary_formula.clear();
 
-            File file = new File(data.getData().getPath());
-            String path = file.getAbsolutePath();
-            String newPath = "/storage/emulated/0/" + path.split(":")[1];
             try {
-                BufferedReader br = new BufferedReader(new FileReader(newPath));
+                BufferedReader br = new BufferedReader(new InputStreamReader(getContentResolver().openInputStream(data.getData())));
                 String line;
 
                 while ((line = br.readLine()) != null) {
